@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spinodoid-surrogate"
+version = "0.1.0"
+description = "PyTorch port of a multi-scale homogenization neural-network surrogate for inverse-designed spinodoid metamaterials"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Spinodoid Surrogate contributors" }]
+keywords = ["metamaterials", "homogenization", "surrogate-model", "pytorch", "spinodoid"]
+dependencies = [
+    "numpy>=1.21",
+    "torch>=1.12",
+]
+
+[project.optional-dependencies]
+# scipy is used only by the MATLAB-benchmark cross-validation tests, which read
+# matlab_framework/fNet.mat; those tests skip cleanly when it is absent.
+test = ["pytest>=7.0", "scipy>=1.8"]
+
+[project.scripts]
+spinodoid-train = "spinodoid_surrogate.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

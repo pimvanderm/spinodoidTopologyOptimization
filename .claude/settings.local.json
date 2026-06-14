@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file trainNeuralNetworks.m *.mat *.csv)",
+      "Bash(cat .venv/pyvenv.cfg)",
+      "Bash(du -sh .venv)",
+      "Bash(exit 1)",
+      "Bash(set -e)",
+      "Bash(mkdir -p matlab_framework)",
+      "Bash(mv trainNeuralNetworks.m dlnetF.mat dlnetI.mat fNet.mat spinodoid-test.csv spinodoid-train.csv matlab_framework/)",
+      "Bash(mkdir -p python_framework/src python_framework/tests)"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/spinodoid_surrogate/__init__.py
+src/spinodoid_surrogate/cli.py
+src/spinodoid_surrogate/config.py
+src/spinodoid_surrogate/data.py
+src/spinodoid_surrogate/metrics.py
+src/spinodoid_surrogate/models.py
+src/spinodoid_surrogate/train.py
+src/spinodoid_surrogate.egg-info/PKG-INFO
+src/spinodoid_surrogate.egg-info/SOURCES.txt
+src/spinodoid_surrogate.egg-info/dependency_links.txt
+src/spinodoid_surrogate.egg-info/entry_points.txt
+src/spinodoid_surrogate.egg-info/requires.txt
+src/spinodoid_surrogate.egg-info/top_level.txt
+tests/test_surrogate.py

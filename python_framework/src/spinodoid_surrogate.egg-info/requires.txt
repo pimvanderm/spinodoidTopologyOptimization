@@ -1,0 +1,5 @@
+numpy>=1.21
+torch>=1.12
+
+[test]
+pytest>=7.0
